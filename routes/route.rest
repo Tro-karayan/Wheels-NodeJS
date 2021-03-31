@@ -1,0 +1,91 @@
+///////////////////////USER////////////////////////
+
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/60636bc5e382137a149d5dbd
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "email": "admin@admin.com",
+    "phone": "12344567890",
+    "password": "admin"
+}
+
+###
+PATCH http://localhost:3000/user/60636bc5e382137a149d5dbd
+Content-Type: application/json
+
+{
+    "password": "admin"
+}
+
+###
+DELETE http://localhost:3000/user/606346b73f77ac56d0b7b3eb
+
+###
+///////////////////////CARS////////////////////////
+
+GET http://localhost:3000/cars
+
+###
+GET http://localhost:3000/cars/60636b853c02e416a4f5dcbe
+
+###
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{
+    "make": "Honda",
+    "model": "Civic",
+    "year": "2000"
+}
+
+###
+PATCH http://localhost:3000/cars/60636b853c02e416a4f5dcbe
+Content-Type: application/json
+
+{
+    "year": "2001"
+}
+
+###
+DELETE http://localhost:3000/cars/60634620a6a84c8e28a30d07
+
+###
+///////////////////////WHEELS////////////////////////
+
+GET http://localhost:3000/wheels
+
+###
+GET http://localhost:3000/wheels/606366e876c1e35fd0a2a95d
+
+###
+POST http://localhost:3000/wheels
+Content-Type: application/json
+
+{
+    "brand": "Enkei",
+    "model":  "Kojin",
+    "price": "500",
+    "width": "9.5", 
+    "rim_diameter": "18",
+    "main_img": "img1",
+    "front_img": "img2",
+    "back_img": "img3"
+}
+
+###
+PATCH http://localhost:3000/wheels/606366e876c1e35fd0a2a95d
+Content-Type: application/json
+
+{
+    "price": "1000"
+}
+
+###
+DELETE http://localhost:3000/wheels/60636226290f708e94ee0712
